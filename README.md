@@ -1,6 +1,6 @@
 # Project A
 
-A Node.js + TypeScript project.
+A Node.js + TypeScript web server (zero dependencies, built on Node's `http` module).
 
 ## Requirements
 
@@ -14,24 +14,39 @@ Install dependencies:
 npm install
 ```
 
-Run in development (watches for changes):
+Start the web server in development (watches for changes):
 
 ```bash
 npm run dev
+# Server listening on http://localhost:3000
 ```
 
-Pass a name as an argument:
+Then open <http://localhost:3000> in your browser, or:
 
 ```bash
-npm run dev -- Ada
-# Hello, Ada!
+curl http://localhost:3000/           # Hello, world!
+curl "http://localhost:3000/?name=Ada" # Hello, Ada!
+curl http://localhost:3000/health      # {"status":"ok"}
 ```
+
+Set a custom port with the `PORT` environment variable:
+
+```bash
+PORT=8080 npm run dev
+```
+
+## Routes
+
+| Method & path        | Response                              |
+| -------------------- | ------------------------------------- |
+| `GET /`              | Plain-text greeting (`?name=` query)  |
+| `GET /health`        | JSON health check `{"status":"ok"}`   |
 
 ## Scripts
 
 | Command             | Description                                  |
 | ------------------- | -------------------------------------------- |
-| `npm run dev`       | Run the app in watch mode with `tsx`.        |
+| `npm run dev`       | Start the server in watch mode with `tsx`.   |
 | `npm run build`     | Compile TypeScript to `dist/`.               |
 | `npm start`         | Run the compiled app from `dist/`.           |
 | `npm test`          | Run the test suite once with Vitest.         |
@@ -44,8 +59,10 @@ npm run dev -- Ada
 ```
 .
 ├── src/
-│   ├── index.ts        # Entry point
-│   ├── greet.ts        # Example module
+│   ├── index.ts        # Entry point — starts the HTTP server
+│   ├── server.ts       # Request handler and server factory
+│   ├── server.test.ts  # Tests for the server routes
+│   ├── greet.ts        # Greeting module
 │   └── greet.test.ts   # Tests for greet
 ├── package.json
 ├── tsconfig.json

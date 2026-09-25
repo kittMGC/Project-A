@@ -1,10 +1,11 @@
 import { afterAll, beforeAll, beforeEach, describe, expect, it } from "vitest";
 import type { AddressInfo } from "node:net";
 import type { Server } from "node:http";
-import { openDatabase, seedIfEmpty, type Db } from "./db/database.js";
+import type { DatabaseSync } from "node:sqlite";
+import { openDatabase, seedIfEmpty } from "./db/database.js";
 import { createApp } from "./server.js";
 
-let db: Db;
+let db: DatabaseSync;
 let server: Server;
 let baseUrl: string;
 

@@ -1,4 +1,4 @@
-import type { Db } from "../db/database.js";
+import type { Db } from "../db/core.js";
 
 export function audit(
   db: Db,

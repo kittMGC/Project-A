@@ -1,4 +1,4 @@
-import { transaction, type Db } from "../db/database.js";
+import { transaction, type Db } from "../db/core.js";
 import { badRequest, conflict, notFound } from "../errors.js";
 import { validate, type Clean, type Schema } from "../validation.js";
 import { audit, diff } from "./audit.js";

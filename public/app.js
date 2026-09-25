@@ -75,6 +75,32 @@ async function busy(button, fn) {
   }
 }
 
+/** In-page confirmation (native confirm() is blocked in some embedded views). */
+function confirmDialog(message, confirmLabel, note) {
+  return new Promise((resolve) => {
+    const yes = h("button", { type: "button", class: "danger", text: confirmLabel });
+    const no = h("button", { type: "button", text: "ยกเลิก" });
+    const dlg = h("dialog", { class: "confirm", "aria-labelledby": "confirm-title" },
+      h("h2", { id: "confirm-title", text: message }),
+      note ? h("p", { class: "sub", text: note }) : null,
+      h("div", { class: "actions" }, no, yes));
+    const close = (result) => {
+      dlg.close();
+      dlg.remove();
+      resolve(result);
+    };
+    yes.addEventListener("click", () => close(true));
+    no.addEventListener("click", () => close(false));
+    dlg.addEventListener("cancel", (e) => {
+      e.preventDefault();
+      close(false);
+    });
+    document.body.append(dlg);
+    dlg.showModal();
+    no.focus();
+  });
+}
+
 function stateMessage(text, isError = false) {
   return h("p", { class: `state${isError ? " error" : ""}`, text });
 }
@@ -239,8 +265,8 @@ function entityEditor({ entity, record, defaults = {}, lookups, onSaved, onDelet
       }
     });
   });
-  del?.addEventListener("click", () => {
-    if (!confirm(`ลบ${def.label} "${record.name}" ถาวร?`)) return;
+  del?.addEventListener("click", async () => {
+    if (!(await confirmDialog(`ลบ${def.label} "${record.name}" ถาวร?`, "ลบ"))) return;
     busy(del, async () => {
       try {
         await api("DELETE", `/api/${entity}/${record.id}`);
@@ -671,8 +697,13 @@ async function renderEmployeeForm(id) {
       }
     });
   });
-  del?.addEventListener("click", () => {
-    if (!confirm(`ลบข้อมูล ${emp.emp_code} ${emp.first_name_th} ${emp.last_name_th} ถาวร?\n\nถ้าพนักงานลาออก ให้เปลี่ยนสถานะเป็น "พ้นสภาพ" แทน เพื่อเก็บประวัติไว้`)) return;
+  del?.addEventListener("click", async () => {
+    const ok = await confirmDialog(
+      `ลบข้อมูล ${emp.emp_code} ${emp.first_name_th} ${emp.last_name_th} ถาวร?`,
+      "ลบข้อมูล",
+      "ถ้าพนักงานลาออก ให้เปลี่ยนสถานะเป็น \"พ้นสภาพ\" แทน เพื่อเก็บประวัติไว้",
+    );
+    if (!ok) return;
     busy(del, async () => {
       try {
         await api("DELETE", `/api/employees/${emp.id}`);

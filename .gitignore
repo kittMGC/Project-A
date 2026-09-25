@@ -17,3 +17,8 @@ npm-debug.log*
 .idea/
 .vscode/
 *.swp
+
+# Local database (contains personal data)
+data/
+*.sqlite
+*.sqlite-*

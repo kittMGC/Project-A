@@ -1,0 +1,2424 @@
+{
+ "_note": "โครงสร้างองค์กรเริ่มต้น สร้างจากรายชื่อพนักงาน ณ 5 ก.ย. 2569 (ไม่มีข้อมูลรายบุคคล) การจัดบริษัทเข้ากลุ่มธุรกิจเป็นข้อสมมติ",
+ "businessGroups": [
+  {
+   "code": "CORP",
+   "name": "Corporate Center (Holding)",
+   "sortOrder": 1
+  },
+  {
+   "code": "AUTO-RETAIL",
+   "name": "Automotive Retail",
+   "sortOrder": 2
+  },
+  {
+   "code": "AUTO-DIST",
+   "name": "Automotive Distribution & New Ventures",
+   "sortOrder": 3
+  },
+  {
+   "code": "MOBILITY",
+   "name": "Mobility & Services",
+   "sortOrder": 4
+  },
+  {
+   "code": "INSURANCE",
+   "name": "Insurance Brokerage",
+   "sortOrder": 5
+  },
+  {
+   "code": "DIGITAL",
+   "name": "Digital, Training & Customer Contact",
+   "sortOrder": 6
+  },
+  {
+   "code": "LIFESTYLE",
+   "name": "Lifestyle (Marine, Aviation & Design)",
+   "sortOrder": 7
+  }
+ ],
+ "companies": [
+  {
+   "code": "MGC",
+   "name": "บริษัท มิลเลนเนียม กรุ๊ป คอร์ปอเรชั่น (เอเชีย) จำกัด (มหาชน)",
+   "groupCode": "CORP"
+  },
+  {
+   "code": "BFA",
+   "name": "บริษัท เบลฟอร์ต ออโตโมบิล (ประเทศไทย) จำกัด",
+   "groupCode": "AUTO-RETAIL"
+  },
+  {
+   "code": "GD",
+   "name": "บริษัท เกย์ดอน มอเตอร์ เซลส์ แอนด์ เซอร์วิสเซส จำกัด",
+   "groupCode": "AUTO-RETAIL"
+  },
+  {
+   "code": "GWA",
+   "name": "บริษัท กู๊ดวูด ออโต้เวอร์ค จำกัด",
+   "groupCode": "AUTO-RETAIL"
+  },
+  {
+   "code": "LNA",
+   "name": "บริษัท ไลอ้อน ออโตโมบิล จำกัด",
+   "groupCode": "AUTO-RETAIL"
+  },
+  {
+   "code": "MAG",
+   "name": "บริษัท มิลเลนเนียม ออโต้ กรุ๊ป จำกัด",
+   "groupCode": "AUTO-RETAIL"
+  },
+  {
+   "code": "MDN",
+   "name": "บริษัท โมเดน่า มอเตอร์เวอร์ค จำกัด",
+   "groupCode": "AUTO-RETAIL"
+  },
+  {
+   "code": "SHA",
+   "name": "บริษัท ซัมมิท ฮอนด้า ออโตโมบิล จำกัด",
+   "groupCode": "AUTO-RETAIL"
+  },
+  {
+   "code": "USM",
+   "name": "บริษัท ยูเอส มอเตอร์ไบค์ จำกัด",
+   "groupCode": "AUTO-RETAIL"
+  },
+  {
+   "code": "XMP",
+   "name": "บริษัท เอ็กซ์ โมบิลิตี้ พลัส จำกัด",
+   "groupCode": "AUTO-RETAIL"
+  },
+  {
+   "code": "ZMP",
+   "name": "บริษัท ซี โมบิลิตี้ พลัส จำกัด",
+   "groupCode": "AUTO-RETAIL"
+  },
+  {
+   "code": "NEO",
+   "name": "บริษัท นีโอ โมบิลิตี้ เอเชีย จำกัด",
+   "groupCode": "AUTO-DIST"
+  },
+  {
+   "code": "XTH",
+   "name": "บริษัท เอ็กซ์ โมบิลิตี้ (ประเทศไทย) จำกัด",
+   "groupCode": "AUTO-DIST"
+  },
+  {
+   "code": "MCR",
+   "name": "บจก.มาสเตอร์ คาร์ เร้นเทิล",
+   "groupCode": "MOBILITY"
+  },
+  {
+   "code": "MDS",
+   "name": "Master Driver Services (MDS)",
+   "groupCode": "MOBILITY"
+  },
+  {
+   "code": "MMS",
+   "name": "บจก.มาสเตอร์ มอเตอร์ เซอร์วิสเซส (ประเทศไทย)",
+   "groupCode": "MOBILITY"
+  },
+  {
+   "code": "HMI",
+   "name": "บริษัท ฮาวเด้น แมกซี่ อินชัวรันส์ โบรกเกอร์ จำกัด",
+   "groupCode": "INSURANCE"
+  },
+  {
+   "code": "i24",
+   "name": "บริษัท ไอ ทเวนตี้โฟร์ จำกัด",
+   "groupCode": "DIGITAL"
+  },
+  {
+   "code": "AZM",
+   "name": "บริษัท เอ็มจีซี มารีน แอนด์ ชาร์เตอร์ (เอเชีย) จำกัด",
+   "groupCode": "LIFESTYLE"
+  },
+  {
+   "code": "MAC",
+   "name": "บริษัท เอ็มจีซี เอวิเอชั่น แอนด์ ชาร์เตอร์ เซอร์วิสเซส (เอเชีย) จำกัด",
+   "groupCode": "LIFESTYLE"
+  },
+  {
+   "code": "V2D",
+   "name": "บริษัท วีทู ดีไซน์ สตูดิโอ จำกัด",
+   "groupCode": "LIFESTYLE"
+  }
+ ],
+ "functions": [
+  {
+   "code": "F01",
+   "name": "Executive Office"
+  },
+  {
+   "code": "F02",
+   "name": "Strategy & Business Development"
+  },
+  {
+   "code": "F03",
+   "name": "Sales - New Vehicle"
+  },
+  {
+   "code": "F04",
+   "name": "Sales - Used Vehicle & Trade-in"
+  },
+  {
+   "code": "F05",
+   "name": "Sales Support & Admin"
+  },
+  {
+   "code": "F06",
+   "name": "Aftersales Service & Workshop"
+  },
+  {
+   "code": "F07",
+   "name": "Body & Paint"
+  },
+  {
+   "code": "F08",
+   "name": "Parts & Warehouse"
+  },
+  {
+   "code": "F09",
+   "name": "Customer Relations & Contact Center"
+  },
+  {
+   "code": "F10",
+   "name": "Marketing & Communications"
+  },
+  {
+   "code": "F11",
+   "name": "Finance & Accounting"
+  },
+  {
+   "code": "F12",
+   "name": "Human Resources & Training"
+  },
+  {
+   "code": "F13",
+   "name": "IT & Digital"
+  },
+  {
+   "code": "F14",
+   "name": "Legal, Audit & Compliance"
+  },
+  {
+   "code": "F15",
+   "name": "Procurement"
+  },
+  {
+   "code": "F16",
+   "name": "General Admin & Facilities"
+  },
+  {
+   "code": "F17",
+   "name": "Rental, Fleet & Mobility Operations"
+  },
+  {
+   "code": "F18",
+   "name": "Insurance Broking Practices"
+  },
+  {
+   "code": "F19",
+   "name": "Design & Architecture"
+  },
+  {
+   "code": "F20",
+   "name": "Driver Services (Client Sites)"
+  }
+ ],
+ "jobLevels": [
+  {
+   "code": "CEO",
+   "name": "Chief Executive Officer",
+   "band": "Executive",
+   "rank": 1
+  },
+  {
+   "code": "COO",
+   "name": "Chief Operating Officer",
+   "band": "Executive",
+   "rank": 2
+  },
+  {
+   "code": "CCO",
+   "name": "Chief Client Officer",
+   "band": "Executive",
+   "rank": 3
+  },
+  {
+   "code": "SD",
+   "name": "Senior Director",
+   "band": "Executive",
+   "rank": 4
+  },
+  {
+   "code": "ED",
+   "name": "Executive Director",
+   "band": "Executive",
+   "rank": 5
+  },
+  {
+   "code": "DIR",
+   "name": "Director",
+   "band": "Executive",
+   "rank": 6
+  },
+  {
+   "code": "GM",
+   "name": "General Manager",
+   "band": "Senior Management",
+   "rank": 7
+  },
+  {
+   "code": "SM",
+   "name": "Senior Manager",
+   "band": "Senior Management",
+   "rank": 8
+  },
+  {
+   "code": "MGR",
+   "name": "Manager",
+   "band": "Middle Management",
+   "rank": 9
+  },
+  {
+   "code": "AM",
+   "name": "Assistant Manager",
+   "band": "Middle Management",
+   "rank": 10
+  },
+  {
+   "code": "SSUP",
+   "name": "Senior Supervisor",
+   "band": "First-line Supervisor",
+   "rank": 11
+  },
+  {
+   "code": "SUP",
+   "name": "Supervisor",
+   "band": "First-line Supervisor",
+   "rank": 12
+  },
+  {
+   "code": "CONS",
+   "name": "Consultant",
+   "band": "Operational",
+   "rank": 13
+  },
+  {
+   "code": "OFF",
+   "name": "Officer",
+   "band": "Operational",
+   "rank": 14
+  },
+  {
+   "code": "WRK",
+   "name": "Worker",
+   "band": "Operational",
+   "rank": 15
+  },
+  {
+   "code": "MSG",
+   "name": "Messenger",
+   "band": "Operational",
+   "rank": 16
+  }
+ ],
+ "departments": [
+  {
+   "companyCode": "AZM",
+   "name": "บริหาร",
+   "functionCode": "F01"
+  },
+  {
+   "companyCode": "AZM",
+   "name": "ขาย - ภูเก็ต",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "AZM",
+   "name": "After Sales Service",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "AZM",
+   "name": "บริการ",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "AZM",
+   "name": "บริการหลังการขาย",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "AZM",
+   "name": "ลูกค้าสัมพันธ์ (พัทยา)",
+   "functionCode": "F09"
+  },
+  {
+   "companyCode": "AZM",
+   "name": "การตลาด",
+   "functionCode": "F10"
+  },
+  {
+   "companyCode": "BFA",
+   "name": "Management",
+   "functionCode": "F01"
+  },
+  {
+   "companyCode": "BFA",
+   "name": "Parts",
+   "functionCode": "F08"
+  },
+  {
+   "companyCode": "BFA",
+   "name": "Finance",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "GD",
+   "name": "บริหาร",
+   "functionCode": "F01"
+  },
+  {
+   "companyCode": "GD",
+   "name": "ขาย",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "GD",
+   "name": "ขาย (กรุงเทพ)",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "GD",
+   "name": "บริการ",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "GD",
+   "name": "เทคนิค",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "GD",
+   "name": "การตลาด",
+   "functionCode": "F10"
+  },
+  {
+   "companyCode": "GD",
+   "name": "บัญชี",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "GWA",
+   "name": "บริหาร",
+   "functionCode": "F01"
+  },
+  {
+   "companyCode": "GWA",
+   "name": "ขาย (กรุงเทพ)",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "GWA",
+   "name": "บริการ",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "GWA",
+   "name": "บริการหลังการขาย",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "GWA",
+   "name": "เทคนิค",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "GWA",
+   "name": "อะไหล่",
+   "functionCode": "F08"
+  },
+  {
+   "companyCode": "GWA",
+   "name": "การตลาด",
+   "functionCode": "F10"
+  },
+  {
+   "companyCode": "GWA",
+   "name": "รับประกันคุณภาพ",
+   "functionCode": "F14"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Management",
+   "functionCode": "F01"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "บริหาร",
+   "functionCode": "F01"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Business Development (Bangkok)",
+   "functionCode": "F02"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Business Development (Phuket)",
+   "functionCode": "F02"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Corporate Development",
+   "functionCode": "F02"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Call Center European Brand",
+   "functionCode": "F09"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Call Center Japanese Brand",
+   "functionCode": "F09"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Marketing & Communucation",
+   "functionCode": "F10"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Accounting & Finance",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "บัญชีและการเงิน",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Human Resources",
+   "functionCode": "F12"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Information Technology",
+   "functionCode": "F13"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Risk, Compliance & Legal",
+   "functionCode": "F14"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Affinity Business",
+   "functionCode": "F18"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Affinity Business - Admin",
+   "functionCode": "F18"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Affinity Business - European Brand Team",
+   "functionCode": "F18"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Affinity Business - Japanese Brand",
+   "functionCode": "F18"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Claim",
+   "functionCode": "F18"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Claims",
+   "functionCode": "F18"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Employee Benefit - Sales",
+   "functionCode": "F18"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Employee Benefits",
+   "functionCode": "F18"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Employee Benefits - Admin Support",
+   "functionCode": "F18"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Financial Line",
+   "functionCode": "F18"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Financial Lines",
+   "functionCode": "F18"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Howden Private Wealth",
+   "functionCode": "F18"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Jewellers Block & Fine Arts",
+   "functionCode": "F18"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Major Accounts",
+   "functionCode": "F18"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Marine & Logistics",
+   "functionCode": "F18"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Operation & Processing",
+   "functionCode": "F18"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Power & Energy",
+   "functionCode": "F18"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Reinsurance & Specialty",
+   "functionCode": "F18"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Risk Engineering and Loss Prevention",
+   "functionCode": "F18"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Specialty",
+   "functionCode": "F18"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Specialty & Commercial Risk Solutions",
+   "functionCode": "F18"
+  },
+  {
+   "companyCode": "HMI",
+   "name": "Trade Credit Risk",
+   "functionCode": "F18"
+  },
+  {
+   "companyCode": "LNA",
+   "name": "Sales",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "LNA",
+   "name": "Sales Team T1",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "LNA",
+   "name": "Sales Team T1 - Jeep",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "LNA",
+   "name": "Sales Team T2",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "LNA",
+   "name": "Sales Team T3",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "LNA",
+   "name": "Sales Support",
+   "functionCode": "F05"
+  },
+  {
+   "companyCode": "LNA",
+   "name": "Aftersales Service",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "LNA",
+   "name": "Service",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "LNA",
+   "name": "Workshop",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "LNA",
+   "name": "Parts",
+   "functionCode": "F08"
+  },
+  {
+   "companyCode": "LNA",
+   "name": "Stock Plaining",
+   "functionCode": "F08"
+  },
+  {
+   "companyCode": "LNA",
+   "name": "Marketing",
+   "functionCode": "F10"
+  },
+  {
+   "companyCode": "LNA",
+   "name": "การเงิน",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "LNA",
+   "name": "บัญชี",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MAC",
+   "name": "บริหาร",
+   "functionCode": "F01"
+  },
+  {
+   "companyCode": "MAG",
+   "name": "บริหาร",
+   "functionCode": "F01"
+  },
+  {
+   "companyCode": "MAG",
+   "name": "Sales Mini - Next",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "MAG",
+   "name": "ขาย",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "MAG",
+   "name": "ขาย - Motorrad ",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "MAG",
+   "name": "ขายรถใหม่ - มินิ",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "MAG",
+   "name": "Master Certifiled Used Car",
+   "functionCode": "F04"
+  },
+  {
+   "companyCode": "MAG",
+   "name": "Sales Used Bike",
+   "functionCode": "F04"
+  },
+  {
+   "companyCode": "MAG",
+   "name": "Sales Used Car",
+   "functionCode": "F04"
+  },
+  {
+   "companyCode": "MAG",
+   "name": "TRADE IN",
+   "functionCode": "F04"
+  },
+  {
+   "companyCode": "MAG",
+   "name": "Used Zupercar",
+   "functionCode": "F04"
+  },
+  {
+   "companyCode": "MAG",
+   "name": "ปรับปรุงสภาพรถใช้แล้ว",
+   "functionCode": "F04"
+  },
+  {
+   "companyCode": "MAG",
+   "name": "สนันสนุนการขายรถใช้แล้ว",
+   "functionCode": "F04"
+  },
+  {
+   "companyCode": "MAG",
+   "name": "สนับสนุนการขาย",
+   "functionCode": "F05"
+  },
+  {
+   "companyCode": "MAG",
+   "name": "Factory",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MAG",
+   "name": "บริการ",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MAG",
+   "name": "บริการ - Motorrad",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MAG",
+   "name": "ซ่อมตัวถังและสี",
+   "functionCode": "F07"
+  },
+  {
+   "companyCode": "MAG",
+   "name": "อะไหล่",
+   "functionCode": "F08"
+  },
+  {
+   "companyCode": "MAG",
+   "name": "การตลาด",
+   "functionCode": "F10"
+  },
+  {
+   "companyCode": "MAG",
+   "name": "ทรัพยากรบุคคล",
+   "functionCode": "F12"
+  },
+  {
+   "companyCode": "MAG",
+   "name": "Building and Maintenance",
+   "functionCode": "F16"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "Strategic and Funding Management",
+   "functionCode": "F01"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "การตลาด",
+   "functionCode": "F10"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "ขายและการตลาด",
+   "functionCode": "F10"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "ติดตามทวงหนี้",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "บัญชี",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "จัดซื้อ",
+   "functionCode": "F15"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "บริหารจัดการสินทรัพย์",
+   "functionCode": "F16"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "Accident",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "Government Fleet",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "Limousine Bangkok",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "Limousine Phuket",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "Mobility",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "Outside Inspector",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "Reservation & Pricing",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "Team 2",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "Team 3",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "กระบี่",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "กรุงเทพ",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "ขอนแก่น",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "ขายระยะยาว",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "ขายระยะยาว (BKK1)",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "ขายระยะยาว (BKK2)",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "ขายระยะยาว (UPC)",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "ขายระยะยาว-วีภาวดีรังสิต",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "ชลบุรี",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "ต่างจังหวัด",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "ทะเบียน",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "น่าน",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "ปฏิบัติการ",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "ปฏิบัติการ (Sixt)",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "พระราม 3",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "พระราม 4",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "พัฒนาการ",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "ภูเก็ต",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "ระยอง",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "ลาดพร้าว",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "ลาว",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "วิภาวดีรังสิต",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "สมุย",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "สุราษฎร์ธานี",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "สุวรรณภูมิ",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "หาดใหญ่",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "อุดรธานี",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "อุบลราชธานี",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MCR",
+   "name": "เชียงใหม่",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MDN",
+   "name": "บริหาร-DSM-ลาดพร้าว",
+   "functionCode": "F01"
+  },
+  {
+   "companyCode": "MDN",
+   "name": "ทีมขาย1-พระราม4",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "MDN",
+   "name": "ทีมขาย2-พระราม4",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "MDN",
+   "name": "Workshop - พระราม4",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MDN",
+   "name": "Workshop Team 1 - พระราม4",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MDN",
+   "name": "บริการ - พระราม4",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MDN",
+   "name": "บริการ ขับรถ-พระราม4",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MDN",
+   "name": "บริการหลังการขาย-พระราม4",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MDN",
+   "name": "อะไหล่-พระราม4",
+   "functionCode": "F08"
+  },
+  {
+   "companyCode": "MDN",
+   "name": "การเงิน (พระราม4)",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MDN",
+   "name": "บัญชี (ลาดพร้าว)",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MDS",
+   "name": "จัดเก็บหนี้สิน",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MDS",
+   "name": "สรรหาพนักงาน",
+   "functionCode": "F12"
+  },
+  {
+   "companyCode": "MDS",
+   "name": "Bangkok Bank PCL.",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MDS",
+   "name": "ขายบริการพนักงานขับรถ-ระยอง",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MDS",
+   "name": "ขายบริการพนักงานขับรถ-ลาดพร้าว",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MDS",
+   "name": "บริหารสำนักงาน",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MDS",
+   "name": "ปฏิบัติการ",
+   "functionCode": "F17"
+  },
+  {
+   "companyCode": "MDS",
+   "name": "(พนักงานขับรถประจำลูกค้า - ทุก Site)",
+   "functionCode": "F20"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "Quality Management & Development",
+   "functionCode": "F01"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "บริหาร",
+   "functionCode": "F01"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "สำนักกรรมการบริหาร",
+   "functionCode": "F01"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "Business Planning & Steering",
+   "functionCode": "F02"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "Product and Planning",
+   "functionCode": "F02"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "การบริหารโครงการ",
+   "functionCode": "F02"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "นักลงทุนสัมพันธ์",
+   "functionCode": "F02"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "พัฒนาธุรกิจ",
+   "functionCode": "F02"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "CRM_Loyalty Program",
+   "functionCode": "F10"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "Marketting Support",
+   "functionCode": "F10"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "สื่อสารองค์กร",
+   "functionCode": "F10"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "Corporate Accounting",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "การเงิน",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "การเงิน (Mini)-เอกมัย",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "การเงิน - สุราษฎร์ธานี",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "การเงิน พระราม3",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "การเงิน พระราม4",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "การเงิน พัฒนาการ ศรีนครินทร์",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "การเงิน ภูเก็ต",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "การเงิน หาดใหญ่",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "การเงิน อุดรธานี",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "การเงิน อุบลราชธานี",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "การเงิน-ลาดพร้าว",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "บัญชี (Mini)-เอกมัย",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "บัญชี ภูเก็ต",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "บัญชี ลาดพร้าว",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "บัญชี สุราษฎร์ธานี",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "บัญชี หาดใหญ่",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "บัญชี อุดรธานี",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "บัญชี อุบลราชธานี",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "บัญชี-ลาดพร้าว",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "Compensaiton and Benefit Dept.",
+   "functionCode": "F12"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "HR Business Partner - SURAT THANI",
+   "functionCode": "F12"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "HR Business Partner-HATYAI",
+   "functionCode": "F12"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "HR Business Partner-PHUKET",
+   "functionCode": "F12"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "HR Business Partner-UBON",
+   "functionCode": "F12"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "HR Business Partner-UDON",
+   "functionCode": "F12"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "Handicapped",
+   "functionCode": "F12"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "การสรรหา",
+   "functionCode": "F12"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "ทรัพยากรบุคคลและพัฒนาองค์กร",
+   "functionCode": "F12"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "Company Secretary",
+   "functionCode": "F14"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "Legal & Government Liaison Dept.",
+   "functionCode": "F14"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "ตรวจสอบภายใน",
+   "functionCode": "F14"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "จัดซื้อ",
+   "functionCode": "F15"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "Building and Maintenance Div.",
+   "functionCode": "F16"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "Building and Maintenance Hatyai",
+   "functionCode": "F16"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "Building and Maintenance Phuket",
+   "functionCode": "F16"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "Building and Maintenance Surat Thani",
+   "functionCode": "F16"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "Building and Maintenance Ubon",
+   "functionCode": "F16"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "Building and Maintenance Udon",
+   "functionCode": "F16"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "General Affair and Workplace Environment Dept.",
+   "functionCode": "F16"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "Preventive and Mainenance-LADPRAO",
+   "functionCode": "F16"
+  },
+  {
+   "companyCode": "MGC",
+   "name": "Project-LADPRAO",
+   "functionCode": "F16"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "บริหาร",
+   "functionCode": "F01"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "Aftersales Service - Lion (KNM)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "Aftersales Service - Lion (TBR)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "Bosch Car Service (ARC)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "Bosch Car Service (KCN)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "Bosch Car Service (KNM)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "Bosch Car Service (KUB)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "Bosch Car Service (LK)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "Bosch Car Service (NGW)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "Bosch Car Service (PK)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "Bosch Car Service (PPY)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "Bosch Car Service (PTB)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "Bosch Car Service (RAM)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "Bosch Car Service (RCP)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "Bosch Car Service (RI4)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "Bosch Car Service (RM4)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "Bosch Car Service (RS)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "Bosch Car Service (SK3)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "Bosch Car Service (SNR)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "Bosch Car Service (SRT)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "Bosch Car Service (SUR)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "Bosch Car Service (TBR)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "Bosch Car Service (UBN)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "ปฏิบัติการ",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "ศูนย์ซ่อมรถยนต์ (กรุงเทพ)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "ศูนย์ซ่อมรถยนต์ (ต่างจังหวัด)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "สนับสนุนเทคนิค",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "อุปกรณ์",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "ซ่อมตัวถังและสี-พระราม5",
+   "functionCode": "F07"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "ขายส่งอะไหล่",
+   "functionCode": "F08"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "ขายส่งอะไหล่ (กรุงเทพ)",
+   "functionCode": "F08"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "คลังสินค้า",
+   "functionCode": "F08"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "คลังสินค้าและขนส่ง",
+   "functionCode": "F08"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "ยาง",
+   "functionCode": "F08"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "สนับสนุนอะไหล่ ทีม 1",
+   "functionCode": "F08"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "สนับสนุนอะไหล่ ทีม 2",
+   "functionCode": "F08"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "อะไหล่",
+   "functionCode": "F08"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "ลูกค้าองค์กร",
+   "functionCode": "F09"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "การตลาด",
+   "functionCode": "F10"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "ติดตามหนี้สิน",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "บัญชีจ่าย",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "บัญชีรับ",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "บัญชีและการเงิน",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "แคชเชียร์",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "MMS",
+   "name": "จัดซื้อ",
+   "functionCode": "F15"
+  },
+  {
+   "companyCode": "NEO",
+   "name": "บริหาร",
+   "functionCode": "F01"
+  },
+  {
+   "companyCode": "NEO",
+   "name": "การเงิน",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "NEO",
+   "name": "บัญชี",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "บริหาร-SHA-ลาดพร้าว",
+   "functionCode": "F01"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ขาย (หาดใหญ่)",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ขาย-บางนา",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ขาย-พัฒนาการ",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ขาย-หัวหมาก",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ขาย-อุดมสุข",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ทีมขาย 1 (หาดใหญ่)",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ทีมขาย 2 (หาดใหญ่)",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ทีมขาย1-บางนา",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ทีมขาย1-พัฒนาการ",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ทีมขาย1-อุดมสุข",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ทีมขาย2-บางนา",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ทีมขาย2-พัฒนาการ",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ทีมขาย2-หัวหมาก",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ทีมขาย2-อุดมสุข",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ทีมขาย3-บางนา",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ทีมขาย3-พัฒนาการ",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ทีมขาย3-หัวหมาก",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "Used Car - พัฒนาการ",
+   "functionCode": "F04"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ขายรถยนต์ใช้แล้ว - บางนา",
+   "functionCode": "F04"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ขายรถยนต์ใช้แล้ว - พัฒนาการ",
+   "functionCode": "F04"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ประเมินราคา",
+   "functionCode": "F04"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ปรับสภาพรถยนต์ใช้แล้ว",
+   "functionCode": "F04"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "Admin ขาย-บางนา",
+   "functionCode": "F05"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "Admin ขาย-พัฒนาการ",
+   "functionCode": "F05"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "Admin ขาย-หัวหมาก",
+   "functionCode": "F05"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "Admin ขาย-อุดมสุข",
+   "functionCode": "F05"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "Sales Administration (หาดใหญ่)",
+   "functionCode": "F05"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "PDI (หาดใหญ่)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "PDI - บางนา",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "PDI - พัฒนาการ",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "PDI - หัวหมาก",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "PDI - อุดมสุข",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "Services (หาดใหญ่)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "Workshop (หาดใหญ่)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "Workshop - บางนา",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "Workshop - พัฒนาการ",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "Workshop - หัวหมาก",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "Workshop - อุดมสุข",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "Workshop Team 1 - บางนา",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "Workshop Team 1 - พัฒนาการ",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "Workshop Team 1 - หัวหมาก",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "Workshop Team 1 - อุดมสุข",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "Workshop Team 2 - พัฒนาการ",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "Workshop Team 2 - หัวหมาก",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "Workshop Team 2 - อุดมสุข",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "Workshop Team 3 - อุดมสุข",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ทีม Workshop 1 (หาดใหญ่)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "บริการ - บางนา",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "บริการ - หัวหมาก",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "บริการ - อุดมสุข",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "บริการ- พัฒนาการ",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "บริการหลังการขาย (Honda)-ลาดพร้าว",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "บริการหลังการขาย (หาดใหญ่)",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "บริการหลังการขาย-บางนา",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "บริการหลังการขาย-พัฒนาการ",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "บริการหลังการขาย-หัวหมาก",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "BP Process - บางนา",
+   "functionCode": "F07"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "BP Process - อุดมสุข",
+   "functionCode": "F07"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ซ่อมตัวถัง และ สี - บางนา",
+   "functionCode": "F07"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ซ่อมตัวถัง และ สี - หัวหมาก",
+   "functionCode": "F07"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ซ่อมตัวถัง และ สี - อุดมสุข",
+   "functionCode": "F07"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ซ่อมตัวถัง และ สี Administration- บางนา",
+   "functionCode": "F07"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ซ่อมตัวถัง และ สี Administration- พัฒนาการ",
+   "functionCode": "F07"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ซ่อมตัวถัง และ สี Administration- หัวหมาก",
+   "functionCode": "F07"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ซ่อมตัวถัง และ สี Administration- อุดมสุข",
+   "functionCode": "F07"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ซ่อมตัวถัง และ สี Front Controller - บางนา",
+   "functionCode": "F07"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ซ่อมตัวถัง และ สี Front Controller - พัฒนาการ",
+   "functionCode": "F07"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ซ่อมตัวถัง และ สี Front Controller - หัวหมาก",
+   "functionCode": "F07"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ซ่อมตัวถัง และ สี Front Controller -อุดมสุข",
+   "functionCode": "F07"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ซ่อมตัวถัง และ สี Workshop - พัฒนาการ",
+   "functionCode": "F07"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ซ่อมตัวถัง และ สี Workshop - อุดมสุข",
+   "functionCode": "F07"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ซ่อมตัวถัง และ สี- พัฒนาการ",
+   "functionCode": "F07"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ซ่อมตัวถัง และ สี-SHA -ลาดพร้าว",
+   "functionCode": "F07"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ซ่อมตัวถังและสี - หาดใหญ่",
+   "functionCode": "F07"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "Stock & Planning - พัฒนาการ",
+   "functionCode": "F08"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "Stock & Planning - หัวหมาก",
+   "functionCode": "F08"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "อะไหล่ (พัฒนาการ)",
+   "functionCode": "F08"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "อะไหล่ (หาดใหญ่)",
+   "functionCode": "F08"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "อะไหล่- SHA-ลาดพร้าว",
+   "functionCode": "F08"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "อะไหล่-บางนา",
+   "functionCode": "F08"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "อะไหล่-หัวหมาก",
+   "functionCode": "F08"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "อะไหล่-อุดมสุข",
+   "functionCode": "F08"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "CRD - บางนา",
+   "functionCode": "F09"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "CRD - พัฒนาการ",
+   "functionCode": "F09"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "CRD - หัวหมาก",
+   "functionCode": "F09"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "CRD - หาดใหญ่",
+   "functionCode": "F09"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "CRD - อุดมสุข",
+   "functionCode": "F09"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "การตลาด",
+   "functionCode": "F10"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "การเงิน - หาดใหญ่",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "การเงิน-บางนา",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "การเงิน-พัฒนาการ",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "การเงิน-หัวหมาก",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "การเงิน-อุดมสุข",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "บัญชี - หาดใหญ่",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "บัญชี-พัฒนาการ",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "บัญชี-หัวหมาก",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "Human Resource and Organization Development-SHA-ลาดพร้าว",
+   "functionCode": "F12"
+  },
+  {
+   "companyCode": "SHA",
+   "name": "ฝึกอบรม -ลาดพร้าว",
+   "functionCode": "F12"
+  },
+  {
+   "companyCode": "USM",
+   "name": "บริหาร-DSM-ลาดพร้าว",
+   "functionCode": "F01"
+  },
+  {
+   "companyCode": "USM",
+   "name": "ขาย-USM-ลาดพร้าว",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "USM",
+   "name": "ทีมขาย 1 เสื้อผ้า - หาดใหญ่",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "USM",
+   "name": "ทีมขาย1-หาดใหญ่",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "USM",
+   "name": "ทีมขาย1-อุบล",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "USM",
+   "name": "โชว์รูมขาย - ธนบุรี",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "USM",
+   "name": "โชว์รูมขาย -หาดใหญ่",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "USM",
+   "name": "โชว์รูมขาย -อุบล",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "USM",
+   "name": "Admin ขาย-หาดใหญ่",
+   "functionCode": "F05"
+  },
+  {
+   "companyCode": "USM",
+   "name": "Services - ธนบุรี",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "USM",
+   "name": "Services -หาดใหญ่",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "USM",
+   "name": "Services -อุบล",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "USM",
+   "name": "Workshop - ธนบุรี",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "USM",
+   "name": "Workshop Team 1 - หาดใหญ่",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "USM",
+   "name": "Workshop Team 1 - อุบล",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "USM",
+   "name": "บริการหลังการขาย -หาดใหญ่",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "USM",
+   "name": "Stock & Planning - ธนบุรี",
+   "functionCode": "F08"
+  },
+  {
+   "companyCode": "USM",
+   "name": "อะไหล่ - ธนบุรี",
+   "functionCode": "F08"
+  },
+  {
+   "companyCode": "USM",
+   "name": "การตลาด - ธนบุรี",
+   "functionCode": "F10"
+  },
+  {
+   "companyCode": "USM",
+   "name": "การตลาด-ลาดพร้าว",
+   "functionCode": "F10"
+  },
+  {
+   "companyCode": "V2D",
+   "name": "Management",
+   "functionCode": "F01"
+  },
+  {
+   "companyCode": "V2D",
+   "name": "Admin",
+   "functionCode": "F19"
+  },
+  {
+   "companyCode": "V2D",
+   "name": "Architecture",
+   "functionCode": "F19"
+  },
+  {
+   "companyCode": "V2D",
+   "name": "Interior Design",
+   "functionCode": "F19"
+  },
+  {
+   "companyCode": "XMP",
+   "name": "บริหาร",
+   "functionCode": "F01"
+  },
+  {
+   "companyCode": "XMP",
+   "name": "ขาย-รามคำแหง",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "XMP",
+   "name": "ขาย-ศรีนครินทร์",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "XMP",
+   "name": "ขาย-หาดใหญ่",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "XMP",
+   "name": "ทีมขาย 1 - พระราม3-ไอคอนสยาม",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "XMP",
+   "name": "ทีมขาย 1 - รามคำแหง",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "XMP",
+   "name": "ทีมขาย 1 - ศรีนครินทร์",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "XMP",
+   "name": "ทีมขาย 1 - หาดใหญ่",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "XMP",
+   "name": "ทีมขาย 2 - รามคำแหง",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "XMP",
+   "name": "ทีมขาย 3 - รามคำแหง",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "XMP",
+   "name": "ทีมขาย 4 - รามคำแหง",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "XMP",
+   "name": "บริการ-รามคำแหง",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "XMP",
+   "name": "บริการ-ศรีนครินทร์",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "XMP",
+   "name": "ซ่อมตัวถังและสี-รามคำแหง",
+   "functionCode": "F07"
+  },
+  {
+   "companyCode": "XMP",
+   "name": "การตลาด",
+   "functionCode": "F10"
+  },
+  {
+   "companyCode": "XMP",
+   "name": "Finance & Accounting",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "XTH",
+   "name": "บริหาร",
+   "functionCode": "F01"
+  },
+  {
+   "companyCode": "XTH",
+   "name": "ขาย",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "XTH",
+   "name": "Aftersales Service",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "XTH",
+   "name": "การตลาด",
+   "functionCode": "F10"
+  },
+  {
+   "companyCode": "XTH",
+   "name": "Accounting",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "XTH",
+   "name": "Finance",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "ZMP",
+   "name": "ขาย-นครราชสีมา",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "ZMP",
+   "name": "ขาย-วิภาวดีรังสิต",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "ZMP",
+   "name": "ขาย-ศรีนครินทร์",
+   "functionCode": "F03"
+  },
+  {
+   "companyCode": "ZMP",
+   "name": "บริการ-นครราชสีมา",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "ZMP",
+   "name": "บริการ-วิภาวดีรังสิต",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "ZMP",
+   "name": "บริการ-ศรีนครินทร์",
+   "functionCode": "F06"
+  },
+  {
+   "companyCode": "ZMP",
+   "name": "ซ่อมตัวถังและสี-วิภาวดีรังสิต",
+   "functionCode": "F07"
+  },
+  {
+   "companyCode": "ZMP",
+   "name": "การตลาด",
+   "functionCode": "F10"
+  },
+  {
+   "companyCode": "ZMP",
+   "name": "Finance & Accounting",
+   "functionCode": "F11"
+  },
+  {
+   "companyCode": "i24",
+   "name": "Call Center",
+   "functionCode": "F09"
+  },
+  {
+   "companyCode": "i24",
+   "name": "MAT",
+   "functionCode": "F12"
+  },
+  {
+   "companyCode": "i24",
+   "name": "IT",
+   "functionCode": "F13"
+  },
+  {
+   "companyCode": "i24",
+   "name": "iMX",
+   "functionCode": "F13"
+  }
+ ]
+}

@@ -1,75 +1,91 @@
 # HRM System
 
-A Node.js + TypeScript web server (zero dependencies, built on Node's `http` module).
+ระบบบริหารงานบุคคล: แก้ไขโครงสร้างองค์กร และบันทึกข้อมูลพนักงาน
+Node.js + TypeScript + SQLite (`node:sqlite` ที่มากับ Node) ไม่มี runtime dependency
 
 ## Requirements
 
-- Node.js >= 20
+- Node.js >= 22.13
 
 ## Getting started
 
-Install dependencies:
-
 ```bash
 npm install
-```
-
-Start the web server in development (watches for changes):
-
-```bash
 npm run dev
-# Server listening on http://localhost:3000
+# HRM System running at http://127.0.0.1:3000
 ```
 
-Then open <http://localhost:3000> in your browser, or:
+เปิด <http://127.0.0.1:3000> ในเบราว์เซอร์ ตอนเปิดครั้งแรก ระบบจะสร้างฐานข้อมูลที่ `data/hrm.sqlite`
+แล้วโหลดโครงสร้างองค์กรเริ่มต้นจาก `db/seed/org-structure.json` ได้แก่ 7 กลุ่มธุรกิจ, 21 บริษัท,
+20 กลุ่มงาน, 16 ระดับ และ 419 แผนก ไฟล์นี้ไม่มีข้อมูลพนักงาน
 
-```bash
-curl http://localhost:3000/           # Hello, world!
-curl "http://localhost:3000/?name=Ada" # Hello, Ada!
-curl http://localhost:3000/health      # {"status":"ok"}
+| ตัวแปร | ค่าเริ่มต้น | ความหมาย |
+| --- | --- | --- |
+| `PORT` | `3000` | พอร์ต |
+| `HOST` | `127.0.0.1` | ใช้ได้เฉพาะเครื่องนี้ ตั้ง `0.0.0.0` เพื่อเปิดให้เครื่องอื่นเข้าได้ (ต้องมีระบบล็อกอินก่อน ดูด้านล่าง) |
+| `DB_FILE` | `data/hrm.sqlite` | ไฟล์ฐานข้อมูล |
+
+> ⚠️ `data/` เก็บข้อมูลส่วนบุคคลของพนักงาน และถูก ignore ใน git แล้ว ห้าม commit
+> สำรองข้อมูลโดยคัดลอกไฟล์ `data/hrm.sqlite` ขณะที่ปิดโปรแกรมอยู่
+
+## หน้าจอ
+
+| หน้า | ใช้ทำอะไร |
+| --- | --- |
+| **โครงสร้างองค์กร** (`#/org`) | ผังกลุ่มธุรกิจ › บริษัท › แผนก พร้อมจำนวนพนักงานปัจจุบัน เพิ่ม แก้ไข ย้ายบริษัทข้ามกลุ่ม ย้ายแผนกข้ามบริษัท เปลี่ยนกลุ่มงาน ปิดใช้งาน หรือลบ |
+| **พนักงาน** (`#/employees`) | ค้นหาด้วยรหัส ชื่อ หรือตำแหน่ง กรองตามกลุ่มธุรกิจ บริษัท หรือสถานะ แบ่งหน้าละ 25 คน |
+| **เพิ่ม/แก้ไขพนักงาน** (`#/employees/new`) | ฟอร์มข้อมูลส่วนตัว สังกัด (เลือกบริษัทแล้วแผนกจะกรองตาม) ระดับ หัวหน้างาน และวันที่ วันพ้นทดลองงานคำนวณให้ 119 วันถ้าเว้นว่าง |
+| **ข้อมูลหลัก** (`#/master`) | กลุ่มงาน (Function) และระดับพนักงาน (Job level / Band) |
+
+กติกาที่ระบบบังคับ (ฝั่ง server):
+
+- รหัสบริษัท รหัสกลุ่ม และรหัสพนักงานห้ามซ้ำ ชื่อแผนกห้ามซ้ำภายในบริษัทเดียวกัน
+- ลบได้เฉพาะรายการที่ไม่มีข้อมูลอื่นผูกอยู่ ถ้ายังใช้อยู่ให้ "ปิดใช้งาน" แทน
+- สถานะ "พ้นสภาพ" ต้องมีวันพ้นสภาพ วันเกิดต้องมาก่อนวันเริ่มงาน วันพ้นทดลองงานและวันพ้นสภาพต้องไม่ก่อนวันเริ่มงาน
+- เลือกตัวเองเป็นหัวหน้าไม่ได้ และสายบังคับบัญชาห้ามวนกลับ
+- บริษัทของพนักงานดูจากแผนก ถ้าย้ายแผนกไปบริษัทอื่น พนักงานในแผนกจะย้ายตาม
+- ทุกการเพิ่ม แก้ไข หรือลบ บันทึกลงตาราง `audit_log`
+
+## ฐานข้อมูล
+
+```
+business_groups 1─* companies 1─* departments *─1 functions
+                                      │
+job_levels 1─* employees *────────────┘   employees.manager_id → employees.id
+audit_log (entity, entity_id, action, changes)
 ```
 
-Set a custom port with the `PORT` environment variable:
+Schema อยู่ใน `src/db/migrations.ts` ระบบบันทึกเวอร์ชันไว้ใน `PRAGMA user_version` ถ้าจะแก้ schema
+ให้เพิ่ม migration ใหม่ต่อท้ายเสมอ ห้ามแก้ migration เดิมที่ปล่อยใช้งานไปแล้ว
 
-```bash
-PORT=8080 npm run dev
-```
+## API
 
-## Routes
+| Method & path | ใช้ทำอะไร |
+| --- | --- |
+| `GET /health` | ตรวจว่าระบบทำงานอยู่ |
+| `GET /api/org/tree` | ผังองค์กรพร้อมจำนวนพนักงาน |
+| `GET, POST /api/{entity}` | `entity` = `business-groups`, `companies`, `departments` (`?company_id=`), `functions`, `job-levels` |
+| `GET, PATCH, DELETE /api/{entity}/:id` | |
+| `GET /api/employees` | `?q=&business_group_id=&company_id=&department_id=&status=&page=&page_size=` |
+| `POST /api/employees` | |
+| `GET, PATCH, DELETE /api/employees/:id` | |
 
-| Method & path        | Response                              |
-| -------------------- | ------------------------------------- |
-| `GET /`              | Plain-text greeting (`?name=` query)  |
-| `GET /health`        | JSON health check `{"status":"ok"}`   |
+คำขอที่เขียนข้อมูลต้องส่ง `Content-Type: application/json` ถ้าข้อมูลไม่ผ่าน ระบบตอบ `400`
+พร้อม `{ error, details: { field: message } }`
 
 ## Scripts
 
-| Command             | Description                                  |
-| ------------------- | -------------------------------------------- |
-| `npm run dev`       | Start the server in watch mode with `tsx`.   |
-| `npm run build`     | Compile TypeScript to `dist/`.               |
-| `npm start`         | Run the compiled app from `dist/`.           |
-| `npm test`          | Run the test suite once with Vitest.         |
-| `npm run test:watch`| Run tests in watch mode.                     |
-| `npm run lint`      | Lint the codebase with ESLint.               |
-| `npm run typecheck` | Type-check without emitting files.           |
+| Command | Description |
+| --- | --- |
+| `npm run dev` | รันแบบ watch ด้วย `tsx` |
+| `npm run build` | คอมไพล์ไปที่ `dist/` |
+| `npm start` | รันจาก `dist/` |
+| `npm test` | รันเทสต์ (Vitest) |
+| `npm run lint` | ESLint |
+| `npm run typecheck` | ตรวจ type |
 
-## Project structure
+## ยังไม่มี (ต้องทำก่อนเปิดให้หลายคนใช้)
 
-```
-.
-├── src/
-│   ├── index.ts        # Entry point — starts the HTTP server
-│   ├── server.ts       # Request handler and server factory
-│   ├── server.test.ts  # Tests for the server routes
-│   ├── greet.ts        # Greeting module
-│   └── greet.test.ts   # Tests for greet
-├── package.json
-├── tsconfig.json
-├── eslint.config.js
-└── .gitignore
-```
-
-## License
-
-MIT
+- **ระบบล็อกอินและสิทธิ์การใช้งาน** ตอนนี้ใครเปิดหน้าเว็บได้ก็แก้ข้อมูลได้ ระบบจึงเปิดให้ใช้ได้เฉพาะเครื่องนี้ (`127.0.0.1`) เป็นค่าเริ่มต้น
+- นำเข้าพนักงานจากไฟล์ Excel
+- จำกัดจำนวนคำขอ (rate limiting) และ HTTPS

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HRM System</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">ข้ามไปเนื้อหา</a>
+  <header class="topbar">
+    <span class="brand">HRM System</span>
+    <nav aria-label="เมนูหลัก">
+      <a href="#/org" data-nav="org">โครงสร้างองค์กร</a>
+      <a href="#/employees" data-nav="employees">พนักงาน</a>
+      <a href="#/master" data-nav="master">ข้อมูลหลัก</a>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1">
+    <p class="state">กำลังโหลด…</p>
+  </main>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

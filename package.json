@@ -1,7 +1,7 @@
 {
-  "name": "project-a",
+  "name": "hrm-system",
   "version": "0.1.0",
-  "description": "Project A — a Node.js + TypeScript project.",
+  "description": "HRM System — a Node.js + TypeScript human resource management system.",
   "type": "module",
   "main": "dist/index.js",
   "engines": {

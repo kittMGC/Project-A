@@ -1,4 +1,4 @@
-# Project A
+# HRM System
 
 A Node.js + TypeScript web server (zero dependencies, built on Node's `http` module).
 
